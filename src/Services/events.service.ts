@@ -23,4 +23,14 @@ export class EventsService {
          return this.http.get<Evt>
          (`http://localhost:3000/Evt/${idCourant}`)
        }
+
+        updateEvt(e:Evt,idCourant:String):Observable<void>{
+           return this.http.put<void>    (`http://localhost:3000/Evt/${idCourant}`,e)
+       
+         }
+         onDelete(id:string):Observable<void>{
+
+          return  this.http.delete<void>('http://localhost:3000/Evt/'+id)
+      
+      } 
 }

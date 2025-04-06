@@ -31,6 +31,7 @@ import { EventsComponent } from './events/events.component';
 import { ModalEvtComponentComponent } from './modal-evt-component/modal-evt-component.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { ModalEventVisibilityComponent } from './modal-event-visibility/modal-event-visibility.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     ArticlesComponent,
     EventsComponent,
     ModalEvtComponentComponent,
+    ModalEventVisibilityComponent,
   ],
   imports: [
     BrowserModule,

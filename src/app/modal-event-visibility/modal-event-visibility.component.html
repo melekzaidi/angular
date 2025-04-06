@@ -1,0 +1,27 @@
+<mat-dialog-content class="dialog-content">
+    <h2 mat-dialog-title class="dialog-title">Event Details</h2>
+    
+    <div class="event-detail">
+      <mat-label class="label">Title</mat-label>
+      <p class="value">{{ data?.Titre }}</p>
+    </div>
+  
+    <div class="event-detail">
+      <mat-label class="label">Start Date</mat-label>
+      <p class="value">{{ data?.DateDebut | date:'MM/dd/yyyy' }}</p>
+    </div>
+  
+    <div class="event-detail">
+      <mat-label class="label">End Date</mat-label>
+      <p class="value">{{ data?.DateFin | date:'MM/dd/yyyy' }}</p>
+    </div>
+  
+    <div class="event-detail">
+      <mat-label class="label">Location</mat-label>
+      <p class="value">{{ data?.Lieu }}</p>
+    </div>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-raised-button color="primary" class="close-btn" (click)="close()">Close</button>
+  </mat-dialog-actions>

@@ -17,28 +17,18 @@
   ],
   "Evt": [
     {
-      "id": "12345",
       "Titre": "Conf",
-      "DateDebut": "2/20/2025",
-      "DateFin": "3/20/2025",
-      "Lieu": "Sfax"
+      "DateDebut": "2025-02-19T23:00:00.000Z",
+      "DateFin": "2025-03-23T23:00:00.000Z",
+      "Lieu": "Sfaxxx",
+      "id": "12345"
     },
     {
-      "id": "0317",
-      "Titre": "test",
+      "Titre": "testsfax",
       "DateDebut": "2025-04-01T23:00:00.000Z",
       "DateFin": "2025-04-18T23:00:00.000Z",
-      "Lieu": "sfax"
-    },
-    {
-      "id": "a4c6",
-      "Titre": "test",
-      "DateDebut": "2025-04-05T23:00:00.000Z",
-      "DateFin": "2025-04-06T23:00:00.000Z",
-      "Lieu": "sfax"
-    },
-    {
-      "id": "0b26"
+      "Lieu": "sfax",
+      "id": "0317"
     }
   ]
 }
