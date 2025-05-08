@@ -32,6 +32,12 @@ import { ModalEvtComponentComponent } from './modal-evt-component/modal-evt-comp
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ModalEventVisibilityComponent } from './modal-event-visibility/modal-event-visibility.component';
+import { LoginComponent } from './login/login.component';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { firebaseConfig } from './environnemet';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -46,12 +52,17 @@ import { ModalEventVisibilityComponent } from './modal-event-visibility/modal-ev
     EventsComponent,
     ModalEvtComponentComponent,
     ModalEventVisibilityComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,MatDialogModule,
     BrowserAnimationsModule,MatTableModule,HttpClientModule,MatIconModule,MatFormFieldModule,FormsModule,ReactiveFormsModule,MatInputModule,
-    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,MatDatepickerModule,MatNativeDateModule
+    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,MatDatepickerModule,MatNativeDateModule,MatCardModule,
+    
+    AngularFireModule.initializeApp(firebaseConfig),
+AngularFireAuthModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

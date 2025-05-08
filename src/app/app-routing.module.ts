@@ -5,10 +5,12 @@ import { MemberFormComponent } from './member-form/member-form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToolsComponent } from './tools/tools.component';
 import { EventsComponent } from './events/events.component';
+import { LoginComponent } from './login/login.component';
 //le fichier de routage princiale
 const routes: Routes = [
   // declarer toutes les routes 
   // et faire la correspondance entre path et compo
+  
   {
     path:'edit/:id',//id est dynammique
     pathMatch:'full',
@@ -39,14 +41,22 @@ const routes: Routes = [
     pathMatch:'full',// matching complet
     component:MemberFormComponent
   },
+  {path:'member',
+    component:MemberComponent},
+    {path:'dashboard',
+      component:DashboardComponent},
   {
     path:'',
     pathMatch:'full',
-redirectTo:'member'  },
+redirectTo:'login'  },
+
   {
     path:'**',
-    component:MemberComponent
+    component:LoginComponent
   }
+  ,
+ 
+
 ];
 
 @NgModule({
